@@ -1,0 +1,22 @@
+Welcome to Hogwarts School of Witchcraft and Wizardry, the premier wizarding school
+where aspiring wizards and witches in Britain, like yourself, can study all there is to know
+about magic! Here, you can explore various branches of magic like Transfiguration,
+Charms, Potions…
+
+Wait, you’re not here to study? Well then, I have another mission for you! Behind the
+stone walls of Hogwarts, the evil dark wizard Voldemort has split his soul into fragments
+called Horcruxes. As long as the Horcruxes exist, Voldemort has the power of immortality
+and cannot be killed. The only way to defeat him is to destroy all of the Horcruxes,
+rendering him mortal again. Five of the Horcruxes are scattered about the school; your
+mission is to find and destroy the Horcruxes so that Voldemort can be defeated once and
+for all!
+
+I will be your eyes and hands.  Direct me with natural English commands; I don't
+understand all of the English language, but I do a pretty good job. The journey through
+Hogwarts is one full of twists and turns; you'd best make yourself a map as you go along.
+Much of my vocabulary describes places and is used to move you there. To move, try words
+like EAST, WEST, NORTH, SOUTH, UP, DOWN, or BACK. Occasionally, you might even need
+to enter a special password to get into a room. I also know about a number of objects
+hidden within Hogwarts which you can TAKE or DROP.  To see what objects you're carrying,
+say INVENTORY. To reprint the detailed description of where you are, say LOOK. If you want
+to end your adventure, say QUIT.

@@ -1,0 +1,449 @@
+EntranceHall
+Entrance Hall
+You are standing in a grand entrance hall. Up ahead of you lies
+a grand staircase leading north.
+-----
+NORTH: GreatHall
+UP: GreatHall
+
+GreatHall
+Great Hall
+You are in the Great Hall, the main dining area in Hogwarts.
+A door lies to your east, and you can see another door leading north.
+To your south is a set of double doors leading to a grand staircase.
+Stairs lead up to the northeast. Another set of stairs leads down
+to the west.
+-----
+SOUTH: EntranceHall
+NORTH: Library
+EAST: Bathroom1
+WEST: EntryBasement
+UP: Entry2
+NORTHEAST: Entry2
+DOWN: EntryBasement
+
+Library
+Hogwarts Library
+You are surrounded by shelves of books in a grand library.
+The exit door is to the south. There is a door leading west. Carved on
+the door are the words: “Prefects Only.” Next to the door is a wooden table.
+On the table is an ancient book with a red and gold cover. The title of
+the book reads: “Virtus.” Drawn beneath the title is a lion’s head.
+-----
+SOUTH: GreatHall
+WEST: RestrictedRoom/BADGE
+WEST: LibraryNoBadge
+
+LibraryNoBadge
+-
+You are not authorized to enter this room!
+-----
+FORCED: Library
+
+RestrictedRoom
+Library restricted section
+You are in the restricted section of the library. The books here
+contain powerful Dark Magic never taught in class, and
+are only read by older students studying advanced
+Defense Against the Dark Arts. The exit is to the east.
+-----
+EAST: Library
+
+Bathroom1
+Bathroom
+You are in an old bathroom. A door lies to your west.
+-----
+WEST: GreatHall
+
+EntryBasement
+Basement entryway
+You have entered the basement floor of Hogwarts. Doors
+lie to your west and north. Drawn on the northern door is a
+badger. Stairs leading up lie to the east.
+-----
+EAST: GreatHall
+UP: GreatHall
+WEST: Kitchen
+NORTH: PassHufflepuff
+
+Kitchen
+Kitchen
+You are in the kitchen of Hogwarts. A small wooden door lies to your south, and
+another door lies to the east. Stairs lead downward to the west. A note on
+a table reads: “PUFFPUFF.” On the back of the note is a drawing of a badger.
+-----
+DOWN: EntryDungeon
+WEST: EntryDungeon
+SOUTH: Pantry
+EAST: EntryBasement
+
+Pantry
+Kitchen pantry
+So much food in the pantry! No wonder the food at Hogwarts is so delicious.
+If only we could say the same for Stanford...The exit is to the north.
+-----
+NORTH: Kitchen
+
+PassHufflepuff
+Hufflepuff Password:
+Only Hufflepuff students are allowed beyond this point! Please enter
+the password here, or go back:
+-----
+PUFFPUFF: CommonsHufflepuff
+SOUTH: EntryBasement
+BACK: EntryBasement
+*: WrongPwdHufflepuff
+
+WrongPwdHufflepuff
+-
+Wrong password! Are you quite sure you’re a Hufflepuff?
+-----
+FORCED: EntryBasement
+
+CommonsHufflepuff
+Hufflepuff common room
+You are in the common room of Hufflepuff. Students sorted to this house are
+known to be hardworking, friendly, and honest. A set of doors leads to
+the east. The exit is to the south.
+-----
+SOUTH: EntryBasement
+EAST: DormHufflepuff/ROBESHUFFLEPUFF
+EAST: NoRobesHufflepuff
+
+NoRobesHufflepuff
+-
+You may have gotten into the common room, but you sure aren’t dressed like
+a Hufflepuff! Try again when you have the right robes.
+-----
+FORCED: CommonsHufflepuff
+
+DormHufflepuff
+Cedric Diggory’s dormitory
+You are in the dormitory of Cedric Diggory, the Hogwarts Triwizard Champion
+of 1994. A door lies to your west.
+-----
+WEST: CommonsHufflepuff
+
+EntryDungeon
+Dungeon entryway
+You are in a dim entryway that leads to the Hogwarts dungeons.  Doors
+lie to your west and south. Drawn on the western door is a
+snake. Stairs leading up lie to the east.
+-----
+EAST: Kitchen
+UP: Kitchen
+WEST: PassSlytherin
+SOUTH: PotionClassroom
+
+PassSlytherin
+Slytherin Password:
+Only Slytherin students are allowed beyond this point! Please enter
+the password here, or go back:
+-----
+PUREBLOOD: CommonsSlytherin
+EAST: EntryDungeon
+BACK: EntryDungeon
+*: WrongPwdSlytherin
+
+WrongPwdSlytherin
+-
+Wrong password! Are you quite sure you’re a Slytherin?
+-----
+FORCED: EntryDungeon
+
+CommonsSlytherin
+Slytherin common room
+You are in the common room of Slytherin. Students sorted to this house are
+known to be cunning, resourceful, and ambitious. Doors lead to
+the west and north. The exit is to the east.
+-----
+EAST: EntryDungeon
+NORTH: BathroomDungeon
+WEST: DormSlytherin/ROBESSLYTHERIN
+WEST: NoRobesSlytherin
+
+NoRobesSlytherin
+-
+You may have gotten into the common room, but you sure aren’t dressed like
+a Slytherin! Try again when you have the right robes.
+-----
+FORCED: CommonsSlytherin
+
+DormSlytherin
+Draco Malfoy’s dormitory
+You are in the dormitory of Draco Malfoy, Harry Potter’s archenemy at Hogwarts
+and former Death Eater. A door lies to your east.
+-----
+EAST: CommonsSlytherin
+
+PotionClassroom
+Snape’s Potions Classroom
+You are in the potions classroom, where students learn to brew a variety of
+specialized potions from one of Hogwart’s most infamous teachers: Severus
+Snape. Be careful as you walk around - you never know what nefarious
+effects a spilled potion could cause! Doors lie to your west and north.
+-----
+NORTH: EntryDungeon
+WEST: ClosetDungeon
+
+ClosetDungeon
+Potions Closet
+You are in a closet filled with various books, ingredients, and
+other mysterious paraphernalia. As you look around, a mysterious
+snake-like voice hisses the word, “PUREBLOOD.”
+-----
+EAST: PotionClassroom
+
+BathroomDungeon
+Dungeon bathroom
+You are in an old bathroom. At first glance, it appears to be abandoned,
+but as you step closer to the sink, you see a shimmering light leading
+down into the drain. A door lies to your south.
+-----
+DOWN: Chamber1/CUP
+DOWN: MissingItems
+SOUTH: CommonsSlytherin
+
+Chamber1
+-
+-----
+FORCED: Chamber2/LOCKET
+FORCED: MissingItems
+
+Chamber2
+-
+-----
+FORCED: Chamber3/DIARY
+FORCED: MissingItems
+
+Chamber3
+-
+-----
+FORCED: ChamberEntrance/DIADEM
+FORCED: MissingItems
+
+MissingItems
+-
+You can enter this secret passage only if you're carrying
+all four Horcruxes scattered in Hogwarts. You don't yet have all four.
+-----
+FORCED: BathroomDungeon
+
+ChamberEntrance
+Chamber of secrets
+You are in a dark chamber beneath the Hogwarts grounds. A dim
+light leads upward. You hear a faint hissing sound to the north, and
+two red eyes glare at you from the dark.
+-----
+UP: BathroomDungeon
+NORTH: SnakeFight/SWORD
+NORTH: SnakeWarning
+
+SnakeWarning
+Danger ahead
+As you step forward, a snake slithers out from the dark, poised to spring
+upon you at any second. If you choose not to go back, but proceed
+without a weapon, you will die.
+-----
+NORTH: Death
+BACK: ChamberEntrance
+SOUTH: ChamberEntrance
+
+Death
+-
+The snake springs upon you with its fangs bared. In the blink of an eye,
+it leaps upon you and sinks its fangs into your throat. As you collapse, the
+room begins to fade from view and you realize that you are dying.
+-
+-----
+FORCED: DEATH
+
+SnakeFight
+-
+As you step forward, a snake springs upon you with its fangs bared.
+You quickly swing the sword, slicing the snake in half. As you do so,
+you hear Voldemort's voice project from the snake, "My Horcrux has
+been destroyed!" However, you still have four Horcruxes remaining...
+
+-----
+FORCED: AfterSnakeFight
+
+AfterSnakeFight
+The sword of Gryffindor holds the power to DESTROY evil…
+Around the chamber, a voice echoes, “The sword of Godric Gryffindor
+holds the power to destroy evil.”
+-----
+DESTROY: Victory
+*: DestroyMessage
+
+DestroyMessage
+-
+One Horcrux is down, but four still remain. Can you find a way
+to DESTROY them once and for all?
+-----
+FORCED: AfterSnakeFight
+
+Victory
+-
+Taking out the DIARY, LOCKET, CUP, and DIADEM, you stab the
+sword of Gryffindor through each one. As you pierce through the final Horcrux,
+a voice hisses, “The Dark Lord is mortal once again.”
+Congratulations - you have destroyed all of the Horcruxes!
+-
+-----
+FORCED: WIN
+
+Entry2
+Second floor entryway
+You are in the entryway of the second floor. Stairs leading down lie to your west.
+Doors lie to your north and south. Two more flights of stairs leading up lie to
+your southwest and east. The stairs to the southwest are covered in
+red and gold carpet, and the stairs to the east are covered in blue and bronze
+carpet.
+-----
+WEST: GreatHall
+DOWN: GreatHall
+NORTH: HiddenRoom/CLOAK
+NORTH: RequirementRoom/WAND
+NORTH: Closet2
+EAST: PassRavenclaw
+SOUTHWEST: PassGryffindor
+UP: ChooseStair
+SOUTH: BathroomPrefect/BADGE
+SOUTH: BathroomNoBadge
+
+ChooseStair
+There are two stairs going up; please specify a direction
+There are two sets of stairs leading up; one to the southwest, and one to the east.
+Which set of stairs would you like to visit?
+-----
+EAST: PassRavenclaw
+SOUTHWEST: PassGryffindor
+BACK: Entry2
+
+BathroomNoBadge
+-
+You are not authorized to enter this room!
+-----
+FORCED: Entry2
+
+Closet2
+An ordinary closet
+You are in an ordinary closet. Nothing to see here. No, really. Don’t
+waste your time using a spell. There’s nothing magical about this closet at all…
+The exit is to the south.
+-----
+SOUTH: Entry2
+
+RequirementRoom
+Room of Requirement
+It appears that this closet is magical indeed! Your wand has unlocked the
+Room of Requirement, a secret room that only appears to those who truly
+need it. Etched in the floor is a message that reads: “What gets larger
+the more you take away?” Drawn next to the message is a blue and bronze “R.”
+The exit is to the south.
+-----
+SOUTH: Entry2
+
+HiddenRoom
+Room of Hidden Things
+A magical closet indeed! Your cloak has miraculously caused the Room of
+Requirement to transform into the Room of Hidden Things. Scattered all
+around you are miscellaneous objects of varying shapes and sizes. The
+exit is to the south.
+-----
+SOUTH: Entry2
+
+BathroomPrefect
+Prefects’ Bathroom
+You have entered the prefects’ bathroom, a bathroom restricted to use by
+Hogwarts Prefects, Head Boys, Head Girls, and Quidditch captains. In other
+words, students with authority. As you walk in, a piece of paper flutters down
+from the ceiling. Unfolding it, you read the message: “Perhaps the ordinary closet
+is more magical than you think, if you can get in while being discreet.” The
+exit is to the north.
+-----
+NORTH: Entry2
+
+PassGryffindor
+Gryffindor Password:
+Only Gryffindor students are allowed beyond this point! Please enter
+the password here, or go back:
+-----
+VIRTUS: CommonsGryffindor
+NORTHEAST: Entry2
+BACK: Entry2
+*: WrongPwdGryffindor
+
+WrongPwdGryffindor
+-
+Wrong password! Are you quite sure you’re a Gryffindor?
+-----
+FORCED: Entry2
+
+CommonsGryffindor
+Gryffindor common room
+You are in the common room of Gryffindor. Students sorted to this house are
+known to be courageous, chivalrous, and determined. A door leads to
+the east. The exit is to the north.
+-----
+NORTH: Entry2
+DOWN: Entry2
+EAST: DormGryffindor/ROBESGRYFFINDOR
+EAST: NoRobesGryffindor
+
+NoRobesGryffindor
+-
+You may have gotten into the common room, but you sure aren’t dressed like
+a Gryffindor! Try again when you have the right robes.
+-----
+FORCED: CommonsGryffindor
+
+DormGryffindor
+Harry Potter’s dormitory
+You are in the dormitory of Harry Potter, also known as the Chosen One and
+the Boy Who Lived. A door lies to your west.
+-----
+WEST: CommonsGryffindor
+
+PassRavenclaw
+Ravenclaw Password:
+Only Ravenclaw students are allowed beyond this point! Please enter
+the password here, or go back:
+-----
+HOLE: CommonsRavenclaw
+EAST: Entry2
+BACK: Entry2
+*: WrongPwdRavenclaw
+
+WrongPwdRavenclaw
+-
+Wrong password! Only those who answer the riddle may pass. What riddle,
+you ask? It is no ordinary riddle…you are required to find it yourself!
+-----
+FORCED: Entry2
+
+CommonsRavenclaw
+Ravenclaw common room
+You are in the common room of Ravenclaw. Students sorted to this house
+are known to be witty and wise. A door leads to the south. The exit is to
+the west.
+-----
+WEST: Entry2
+DOWN: Entry2
+SOUTH: DormRavenclaw/ROBESRAVENCLAW
+SOUTH: NoRobesRavenclaw
+
+NoRobesRavenclaw
+-
+You may have gotten into the common room, but you sure aren’t dressed like
+a Ravenclaw! Try again when you have the right robes.
+-----
+FORCED: CommonsRavenclaw
+
+DormRavenclaw
+Luna Lovegood’s dormitory
+You are in the dormitory of Luna Lovegood, a witch who many consider to
+be quite odd. A door lies to your north.
+-----
+NORTH: CommonsRavenclaw

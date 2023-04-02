@@ -1,0 +1,47 @@
+ROBESGRYFFINDOR
+a set of red and gold robes
+Bathroom1
+
+ROBESSLYTHERIN
+a set of green and silver robes
+PotionClassroom
+
+ROBESHUFFLEPUFF
+a set of yellow and black robes
+Pantry
+
+ROBESRAVENCLAW
+a set of blue and bronze robes
+Closet2
+
+SWORD
+a golden sword with a lion engraving
+ChamberEntrance
+
+DIARY
+a simple black diary with the engraving T. M. Riddle
+RestrictedRoom
+
+LOCKET
+a gold locket inlaid with a green, serpentine S
+DormSlytherin
+
+CUP
+a golden cup with a badger engraving
+DormHufflepuff
+
+WAND
+a wand made out of holly and a phoenix feather core
+DormGryffindor
+
+DIADEM
+a silver diadem, purported to belong to Rowena Ravenclaw
+HiddenRoom
+
+CLOAK
+a black cloak with the power to render the wearer invisible
+BathroomPrefect
+
+BADGE
+a prefect badge, for students who are given extra authority
+DormRavenclaw
